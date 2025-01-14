@@ -8,7 +8,7 @@ def probability(rating1: float, rating2: float) -> float:
     return round(1.0 / (1.0 + 10 ** ((rating2 - rating1) / 400)), 4)
 
 
-def calculateElo(rating1: float, rating2: float, outcome: float, K: float = 100) -> (float, float):
+def calculateElo(rating1: float, rating2: float, outcome: float, K: float = 40) -> (float, float):
     """
     Calculate the new elo ratings for two players based on the outcome of the match
     :param rating1: Player 1's current rating
